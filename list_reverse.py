@@ -7,8 +7,8 @@ def list_reverse(first: Optional[Node]) -> Optional[Node]:
     prev = None
     curr = first
     while curr is not None:
-        nxt = curr.next    # save next node
-        curr.next = prev   # reverse the link
-        prev = curr        # move prev forward
-        curr = nxt         # move curr forward
-    return prev            # new head of the reversed list
+        nxt = curr.next    
+        curr.next = prev   
+        prev = curr        
+        curr = nxt         
+    return prev            

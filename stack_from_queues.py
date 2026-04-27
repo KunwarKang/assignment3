@@ -60,7 +60,7 @@ class StackFromQueues:
                 last = val
             else:
                 passive.enqueue(val)
-        # Enqueue the last element to passive to preserve the stack contents
+        
         if last is not None:
             passive.enqueue(last)
         return last
@@ -74,7 +74,7 @@ class StackFromQueues:
         """
         assert not self.is_empty(), "pop() called on empty stack"
         active, passive = self._active_and_passive()
-        # Move all elements except the last one to the passive queue
+        
         last = None
         while not active.is_empty():
             val = active.dequeue()

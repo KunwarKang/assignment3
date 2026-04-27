@@ -47,7 +47,6 @@ class QueueFromStacks:
         """
         assert not self.is_empty(), "front() called on empty queue"
         self._shift_if_needed()
-        # s2 must have at least one element after shift
         return self.s2.peek()
 
     def dequeue(self) -> int:

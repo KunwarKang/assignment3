@@ -1,5 +1,3 @@
-
-# queue_from_stacks.py
 """
 Queue implemented using two stacks (s1 and s2).
 
